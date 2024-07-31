@@ -1,0 +1,164 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  padding-top: 130px;
+  color: white;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.carousel {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner {
+  display: flex;
+  animation: slide 15s infinite linear;
+}
+
+.carousel-item {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(1, 1, 10);
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+  padding-top: 30px;
+}
+
+.carousel-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.carousel-item p {
+  font-size: 20px;
+  margin: 0;
+  color: #e4e0e0;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 2560px) {
+  .carousel-item {
+    flex: 0 0 20%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .carousel-item {
+    flex: 0 0 25%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .carousel-item {
+    flex: 0 0 33.33%;
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel-item {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    flex: 0 0 75%;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .carousel-item p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .carousel-item p {
+    font-size: 16px;
+  }
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+  padding-top: 100px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(1, 1, 10);
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4169e1;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}

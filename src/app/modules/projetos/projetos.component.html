@@ -1,0 +1,24 @@
+<app-painel></app-painel>
+<header class="header">
+    <h1>Meus Projetos</h1>
+    <p>Bem-vindo à minha página de projetos! Aqui você encontrará uma seleção dos projetos que desenvolvi e publiquei no
+        GitHub.</p>
+</header>
+
+<section class="projects">
+    <h2>Projetos</h2>
+    <div class="project-list">
+        <div class="project-container" *ngFor="let projeto of projetos">
+            <div class="project-item">
+                <h3>{{ projeto.nome }}</h3>
+                <p>{{ projeto.descricao }}</p>
+                <a [href]="projeto.link" class="project-link" target="_blank">Veja no GitHub</a>
+                <div class="project-icons">
+                    <img *ngFor="let img of projeto.imagensTecnologias" [src]="img" alt="Imagem da tecnologia"
+                        class="project-icon">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-roda-pe></app-roda-pe>

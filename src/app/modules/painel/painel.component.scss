@@ -1,0 +1,86 @@
+.panel {
+  position: relative;
+}
+
+.name-panel {
+  background-color: #4169e1;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name-panel h3 {
+  margin: 0;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.icon {
+  font-size: 35px;
+  color: black;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.menu .menu-icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.menu a:hover {
+  color: #4169e1;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.social-icon:hover {
+  opacity: 0.8;
+}
