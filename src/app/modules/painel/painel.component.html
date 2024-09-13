@@ -1,7 +1,13 @@
 <div class="panel">
   <div class="name-panel">
     <h3>Develop Full Stack</h3>
-    <mat-icon class="icon" (click)="toggleMenu()">density_small</mat-icon>
+    <div class="menu-controls">
+      <a href="assets/curriculoJuliaAlves.pdf" download class="btn-download">
+        <mat-icon class="download-icon">file_download</mat-icon>
+        Baixar Currículo
+      </a>
+      <mat-icon class="icon" (click)="toggleMenu()">density_small</mat-icon>
+    </div>
   </div>
 
   <div class="menu" *ngIf="isMenuOpen">

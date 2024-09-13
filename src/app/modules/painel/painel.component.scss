@@ -84,3 +84,56 @@
 .social-icon:hover {
   opacity: 0.8;
 }
+
+.btn-download-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.btn-download {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  color: #4169e1;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download .download-icon {
+  margin-right: 10px;
+  color: #4169e1;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-download:hover {
+  background-color: #82a1ff;
+}
+
+.menu-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .btn-download {
+    padding: 8px;
+    font-size: 0;
+  }
+
+  .btn-download .download-icon {
+    margin-right: 0;
+    font-size: 25px;
+  }
+
+  .btn-download::after {
+    content: "";
+  }
+}
