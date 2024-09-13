@@ -41,10 +41,16 @@ export class ProjetosComponent {
       imagensTecnologias: ['assets/angular-logo.png', 'assets/typescript.png', 'assets/css.png', 'assets/html.png']
     },
     {
-      nome: 'Feed RSS',
+      nome: 'Feed RSS - Backend',
       descricao: 'Um projeto desenvolvido para fornecer atualizações em tempo real sobre conteúdos de interesse, como notícias e artigos. Ele permite a personalização das fontes de notícias e o gerenciamento dos feeds, oferecendo uma interface intuitiva para acompanhar as últimas atualizações de maneira eficiente.',
       link: 'https://github.com/juliaAl18/feed-rss',
       imagensTecnologias: ['assets/node-logo.png', 'assets/js.png']
+    },
+    {
+      nome: 'InovaTech',
+      descricao: 'O projeto envolve a criação de uma landing page atrativa e funcional para a InovaTech, especializada na venda de telefones e serviços de assistência técnica. A página será otimizada para dispositivos móveis e desktop, apresentando um design moderno que destaca os produtos disponíveis, promoções e a expertise em assistência técnica. Incluiremos um feed automatizado do Instagram para mostrar as postagens mais recentes e interações com os clientes, além de seções dedicadas a informações sobre os serviços oferecidos.',
+      link: 'https://github.com/juliaAl18/inovatechs',
+      imagensTecnologias: ['assets/angular-logo.png','assets/node-logo.png', 'assets/js.png', 'assets/typescript.png']
     },
   ];
 
